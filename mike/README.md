@@ -2,7 +2,7 @@
 
 How to use:
 * Put files in, like so: `alacritty/.config/alacritty/alacritty.yml`
-* Use `stow -v -R -t ~ $config`: `-v` = Verbose `-R` = Clean up before doing the needful 
+* Use `stow -v -R -t ~ $config` 
   * `-v`: Verbose
   * `-R`: Clean up before doing the needful
   * `-t`: Target
