@@ -55,3 +55,5 @@ alias ll='ls -lh'
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 # Ugh. Have to make this portable. Check if the directory exists BEFORE fucking with $PATH
 [[ -d ${HOME}/.rvm/bin ]] && export PATH="$PATH:$HOME/.rvm/bin"
+# bleh. rustup does the same nonsense.
+[[ -d ${HOME}/.cargo/bin ]] && export PATH="$PATH:$HOME/.cargo/bin"
