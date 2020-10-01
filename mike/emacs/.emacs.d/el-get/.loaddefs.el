@@ -366,7 +366,55 @@ When called interactively, switch to the process buffer.
 
 ;;;***
 
-;;;### (autoloads nil nil ("el-get/el-get-install.el") (0 0 0 0))
+;;;### (autoloads nil "markdown-mode/markdown-mode" "../../../../../../.emacs.d/el-get/markdown-mode/markdown-mode.el"
+;;;;;;  "1879e10758b4d4ee1b7446f20511d3a1")
+;;; Generated autoloads from ../../../../../../.emacs.d/el-get/markdown-mode/markdown-mode.el
+
+(autoload 'markdown-mode "markdown-mode/markdown-mode" "\
+Major mode for editing Markdown files.
+
+\(fn)" t nil)
+
+(add-to-list 'auto-mode-alist '("\\.\\(?:md\\|markdown\\|mkd\\|mdown\\|mkdn\\|mdwn\\)\\'" . markdown-mode))
+
+(autoload 'gfm-mode "markdown-mode/markdown-mode" "\
+Major mode for editing GitHub Flavored Markdown files.
+
+\(fn)" t nil)
+
+(autoload 'markdown-view-mode "markdown-mode/markdown-mode" "\
+Major mode for viewing Markdown content.
+
+\(fn)" t nil)
+
+(autoload 'gfm-view-mode "markdown-mode/markdown-mode" "\
+Major mode for viewing GitHub Flavored Markdown content.
+
+\(fn)" t nil)
+
+(autoload 'markdown-live-preview-mode "markdown-mode/markdown-mode" "\
+Toggle native previewing on save for a specific markdown file.
+
+If called interactively, enable Markdown-Live-Preview mode if ARG
+is positive, and disable it if ARG is zero or negative.  If
+called from Lisp, also enable the mode if ARG is omitted or nil,
+and toggle it if ARG is `toggle'; disable the mode otherwise.
+
+\(fn &optional ARG)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "markdown-mode/markdown-mode"
+;;;;;;  "../../../../../../.emacs.d/el-get/markdown-mode/markdown-mode.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../../.emacs.d/el-get/markdown-mode/markdown-mode.el
+
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "markdown-mode/markdown-mode" '("defun-markdown-" "gfm-" "markdown")))
+
+;;;***
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../../.emacs.d/el-get/markdown-mode/markdown-mode.el"
+;;;;;;  "el-get/el-get-install.el") (0 0 0 0))
 
 ;;;***
 

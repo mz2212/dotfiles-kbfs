@@ -25,4 +25,8 @@
  (lua-mode status "installed" recipe
 	   (:name lua-mode :description "A major-mode for editing Lua scripts" :depends
 		  (ample-regexps)
-		  :type github :pkgname "immerrr/lua-mode")))
+		  :type github :pkgname "immerrr/lua-mode"))
+ (markdown-mode status "installed" recipe
+		(:name markdown-mode :description "Major mode to edit Markdown files in Emacs" :website "http://jblevins.org/projects/markdown-mode/" :type github :pkgname "jrblevin/markdown-mode" :prepare
+		       (add-to-list 'auto-mode-alist
+				    '("\\.\\(md\\|mdown\\|markdown\\)\\'" . markdown-mode)))))
