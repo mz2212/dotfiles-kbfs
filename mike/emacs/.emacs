@@ -25,8 +25,8 @@
 (setq-default truncate-lines 1)
 
 ;; Transparency stuff
-(set-frame-parameter (selected-frame) 'alpha '(82 . 63))
-(add-to-list 'default-frame-alist '(alpha . (82 . 63)))
+(set-frame-parameter (selected-frame) 'alpha '(97 . 63))
+(add-to-list 'default-frame-alist '(alpha . (97 . 63)))
 
 ;; begin el-get stuff
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get")

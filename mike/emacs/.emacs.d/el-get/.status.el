@@ -29,4 +29,8 @@
  (markdown-mode status "installed" recipe
 		(:name markdown-mode :description "Major mode to edit Markdown files in Emacs" :website "http://jblevins.org/projects/markdown-mode/" :type github :pkgname "jrblevin/markdown-mode" :prepare
 		       (add-to-list 'auto-mode-alist
-				    '("\\.\\(md\\|mdown\\|markdown\\)\\'" . markdown-mode)))))
+				    '("\\.\\(md\\|mdown\\|markdown\\)\\'" . markdown-mode))))
+ (pkgbuild-mode status "installed" recipe
+		(:name pkgbuild-mode :description "Major mode for editing PKGBUILD files" :type github :pkgname "juergenhoetzel/pkgbuild-mode" :features pkgbuild-mode :prepare
+		       (add-to-list 'auto-mode-alist
+				    '("PKGBUILD$" . pkgbuild-mode)))))
