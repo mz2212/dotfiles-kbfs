@@ -1,3 +1,4 @@
 #!/usr/bin/env sh
 
+export MANROFFOPT="-fH"
 man -Tpdf "$@" | zathura -

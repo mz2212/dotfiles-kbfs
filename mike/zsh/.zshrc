@@ -38,7 +38,8 @@ export _JAVA_AWT_WM_NONREPARENTING=1 # This one's useful anyways.
 hash trash-cli 2>/dev/null && export ELECTRON_TRASH=trash-cli # I don't understand this too well. I've never heard of `hash` before. https://stackoverflow.com/questions/592620/how-can-i-check-if-a-program-exists-from-a-bash-script
 
 # Exports to make man(1) put out some nice output when used in conjunction with "-Tpdf"
-export MANROFFOPT="-fH" # "-fH" is a groff option to set the default font family to helvetica
+#export MANROFFOPT="-fH" # "-fH" is a groff option to set the default font family to helvetica
+# Above line breaks things. Put in zman script.
 
 ZHOME="$HOME/.zhome"
 

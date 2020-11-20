@@ -438,7 +438,9 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey }, "`", function () scratch.drop(terminal, "top", "center", 1.0, 0.5) end),
     -- Gaps
     awful.key({ modkey, "Shift" }, "Down", function () decrease_gaps() end),
-    awful.key({ modkey, "Shift" }, "Up", function () increase_gaps() end)
+    awful.key({ modkey, "Shift" }, "Up", function () increase_gaps() end),
+    -- Screen Lock
+    awful.key({ modkey }, "l", function () awful.util.spawn("/home/mikey/bin/lock.sh") end)
 )
 
 clientkeys = awful.util.table.join(
